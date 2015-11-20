@@ -1,0 +1,44 @@
+/**/
+/* VARIABLES */
+/**/
+/* container settings */
+/**/
+/* STYLES */
+/**/
+html,
+body {
+  height: 100%; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  color: #0055a5; }
+
+.main {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+
+.container {
+  width: 100%;
+  max-width: 60em;
+  margin: 0 auto;
+  color: #0055a5;
+  padding: 2em;
+  border: 1px solid #eee;
+  background: #f7f7f7;
+  border-radius: 10px; }
+  .container.full-width {
+    max-width: 100%;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0; }
+  .container.content-centered {
+    text-align: center; }
+  .container.vertical-centered {
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%); }

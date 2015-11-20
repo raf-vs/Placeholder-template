@@ -1,0 +1,65 @@
+/**/
+/* VARIABLES */
+/**/
+$brand-color: #0055a5;
+
+/* container settings */
+$container-max-width: 60em;
+$container-bg-color: #f7f7f7;
+$container-border: 1px solid #eee;
+$container-border-radius: 10px;
+$vertical-centered-position: 40%;
+
+
+/**/
+/* STYLES */
+/**/
+html,
+body {
+	height:100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+a {
+	color: $brand-color;
+}
+
+.main {
+	width:100%;
+	height:100%;
+	-webkit-transform-style: preserve-3d;
+  	-moz-transform-style: preserve-3d;
+  	transform-style: preserve-3d;
+}
+
+.container {
+	width: 100%;
+	max-width: $container-max-width;
+	margin: 0 auto;
+	color: $brand-color;
+	padding: 2em;
+	border: $container-border;
+	background: $container-bg-color;
+	border-radius: $container-border-radius;
+
+	&.full-width {
+		max-width: 100%;
+		border-left:0;
+		border-right: 0;
+		border-radius: 0;
+	}
+
+	&.content-centered {
+		text-align:center;
+	}
+  	
+	&.vertical-centered {
+		position: relative;
+		top: $vertical-centered-position;
+		transform: translateY(-$vertical-centered-position);
+	}
+}
